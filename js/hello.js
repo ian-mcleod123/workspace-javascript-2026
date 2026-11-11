@@ -5,12 +5,21 @@
 
 // get the date and time 
 var today = new Date();
-
+var hours = today.getHours();
 
 // display the greeting message 
+var greeting = "Good morning!"; 
 // modify the code so that your code display "Good afternoon" whereas time is from 12:00pm to 6:00pm
+if (hours < 12) {
+    greeting = "Good morning!";
+} else if (hours < 18) {
+    greeting = "Good afternoon!";
+} else {
+    greeting = "Good evening!";
+}
+
 
 
 
 // write to the document 
-document.write(greetings);
+document.write(greeting);

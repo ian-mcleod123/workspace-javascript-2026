@@ -21,13 +21,13 @@
     <div class="mainwrapper">
         <div class="question">
             <h1>Substract then Add</h1>
-            <p>Felix has 450 stickers. Felix gives 100 stickers to Robin,
-                then takes back 3 stickers from Robin.</p>
+            <p>Felix has <span id="M">0</span> stickers. Felix gives <span id="N">0</span> stickers to Robin,
+                then takes back <span id="P">0</span> stickers from Robin.</p>
             <p>Choose <b>both</b> of the values below that describe how many stickers Felix has now.</p>
 
             <form>
                 <div class="answergroup">
-                <div class="answer selected"><label><input type="checkbox" name="ans" value="1">450-103</label> </div>
+                <div class="answer"><label><input type="checkbox" name="ans" value="1">450-103</label> </div>
                 <div class="answer"><label><input type="checkbox" name="ans" value="2">450-97</label> </div>
                 <div class="answer"><label><input type="checkbox" name="ans" value="3">450-100-3</label> </div>
                 <div class="answer"><label><input type="checkbox" name="ans" value="4">450-100+3</label></div>
@@ -41,9 +41,19 @@
     <div class="bottombar">
 
     </div>
+    <script>
+        let M = Math.floor(Math.random() * 451) + 50;
+        let N = Math.floor(Math.random() * 101) + 10;
+        let P = Math.floor(Math.random() * 10) + 1;
+
+        document.getElementById("M").textContent = M;
+        document.getElementById("N").textContent = N;
+        document.getElementById("P").textContent = P;
+    </script>
+
+<script src="quiz.js"></script>
 
 
-    <script src="js/quiz.js"></script>
 
 </body>
 
